@@ -2,8 +2,6 @@
 var expect = require('chai').expect;
 var request = require('supertest');
 
-var server = require('./../server');
-
 describe('listen', function() {
     var server;
 
