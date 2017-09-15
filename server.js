@@ -4,8 +4,14 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 
 var app = express();
-var PORT = 3000;
 
-app.listen(PORT, function() {
+app.get('/', function(res, res) {
+    res.status(200).send('ok');
+});
+
+var server = app.listen(3000, function() {
+    var PORT = server.address().port;
     console.log('Server running. Listening on ' + PORT);
 });
+
+module.exports = server;
