@@ -15,3 +15,6 @@ News-scraper is an application which uses Cheerio, and MongoDB to gather data fr
 
 # Using News Scraper
 - Coming soon.
+
+# Testing
+- https://glebbahmutov.com/blog/how-to-correctly-unit-test-express-server/
