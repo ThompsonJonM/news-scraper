@@ -21,7 +21,7 @@ describe('listen', function() {
 
     it('404 for everything else', function testPath(done) {
         request(server)
-            .get('/foo')
+            .get('/breh')
             .expect(404, done);
     });
 });
