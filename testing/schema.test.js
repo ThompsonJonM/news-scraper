@@ -5,7 +5,7 @@ var expect = require('chai').expect;
 var chai = require('chai');
 
 /* Creation of a test schema using Mongoose
-Much like the classwork, the name will be required */
+Much like the classwork, the item will be required */
 var schemaTest = new Schema ({
     headline: { 
         type: String, 
