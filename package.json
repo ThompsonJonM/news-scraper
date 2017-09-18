@@ -4,7 +4,8 @@
   "description": "News-scraper is an application which uses Cheerio, and MongoDB to gather data from news sites and display it on the DOM.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
