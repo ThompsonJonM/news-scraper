@@ -5,7 +5,7 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 
-app.get('/', function(res, res) {
+app.get('/', function(req, res) {
     res.status(200).send('ok');
 });
 
