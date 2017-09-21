@@ -74,7 +74,25 @@ request(options, function(error, response, html) {
 
 app.get('/', function(req, res) {
     res.status(200).send('ok');
+
+    Webscrapes
+        .findOne()
+        .exec(function(err, data) {
+            if (err) {
+                console.log('An error has occurred while attempting to render the saved data');
+            } else {
+                res.render('index', {
+                    headline: data.headline,
+                    synopsis: data.synopsis,
+                    articleURL: data.articleURL,
+                    _id: data._id,
+                    comments: data.comments
+                });
+            }
+        });
 });
+
+
 
 var server = app.listen(3000, function() {
     var PORT = server.address().port;
