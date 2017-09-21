@@ -29,7 +29,12 @@ var WebScrapeSchema = Schema ({
             /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/, 
             'Please enter a valid URL'
         ]
-    }
+    },
+
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Note'
+    }]
 });
 
 var WebScrapes = mongoose.model('WebScrapes', WebScrapeSchema);
