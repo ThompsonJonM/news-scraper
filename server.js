@@ -3,6 +3,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 
+var Webscrapes = require('./models/dataModel')
+var Comments = require('./models/commentModel');
+
 var app = express();
 
 app.get('/', function(req, res) {
