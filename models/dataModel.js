@@ -33,7 +33,7 @@ var WebScrapeSchema = Schema ({
 
     comments: [{
         type: Schema.Types.ObjectId,
-        ref: 'Note'
+        ref: 'Comments'
     }]
 });
 
