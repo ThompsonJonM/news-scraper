@@ -1,6 +1,6 @@
 // Dependencies
 var mongoose = require('mongoose');
-var Schma = mongoose.Schema;
+var Schema = mongoose.Schema;
 
 var commentSchema = Schema({
     comment: {
